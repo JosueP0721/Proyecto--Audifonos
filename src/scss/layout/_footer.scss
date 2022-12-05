@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    p {
+        text-align: center;
+        font-family: v.$fuenteSecundaria;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: v.$c-primario;
+        padding-top: 8rem;
+
+        @include m.tablet {
+            padding: 0;
+        }
+    }
+}
